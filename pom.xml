@@ -24,7 +24,7 @@
 	          <manifest>
 	            <addClasspath>true</addClasspath>
 	            <classpathPrefix>lib/</classpathPrefix>
-	            <mainClass>com.manifest.Manifest</mainClass>
+	            <mainClass>phongnhatravelbackendver2.manifest.Manifest</mainClass>
 	          </manifest>
 	        </archive>
 	      </configuration>
