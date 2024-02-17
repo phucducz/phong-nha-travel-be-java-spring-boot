@@ -12,7 +12,7 @@
 	
 	<packaging>jar</packaging>
 
-	<build>
+<!-- 	<build>
 	  <plugins>
 	    <plugin>
 	      <!-- Build an executable JAR -->
@@ -30,11 +30,30 @@
 	      </configuration>
 	    </plugin>
 	  </plugins>
-	</build>
+	</build> -->
+
+	<plugins>
+	    <plugin>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-maven-plugin</artifactId>
+	        <configuration>
+	            <mainClass>phongnhatravelbackendver2.manifest.Manifest</mainClass>
+	            <layout>JAR</layout>
+	        </configuration>
+	    	<executions>
+		    <execution>
+		        <goals>
+		            <goal>repackage</goal>
+		        </goals>
+		    </execution>
+		</executions>
+	    </plugin>
+	</plugins>
 	
 	<properties>
 		<java.version>1.8</java.version>
 		<mysql.version>8.0.31</mysql.version>
+		<start-class>phongnhatravelbackendver2.manifest.Manifest</start-class>
 	</properties>
 	
 	<dependencies>
