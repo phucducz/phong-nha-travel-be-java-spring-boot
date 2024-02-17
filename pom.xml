@@ -12,8 +12,8 @@
 	
 	<packaging>jar</packaging>
 
-<!-- 	<build>
-	  <plugins>
+	<build>
+<!-- 	  <plugins>
 	    <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-jar-plugin</artifactId>
@@ -28,10 +28,8 @@
 	        </archive>
 	      </configuration>
 	    </plugin>
-	  </plugins>
-	</build> -->
-
-	<plugins>
+	  </plugins> -->
+		<plugins>
 	    <plugin>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-maven-plugin</artifactId>
@@ -48,6 +46,7 @@
 		</executions>
 	    </plugin>
 	</plugins>
+	</build>
 	
 	<properties>
 		<java.version>1.8</java.version>
