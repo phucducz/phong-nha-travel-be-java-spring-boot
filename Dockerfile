@@ -10,4 +10,4 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/phongnhatravelbackendver2-0.0.1-SNAPSHOT.jar phongnhatravelbackendver2.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","phongnhatravelbackendver2-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","phongnhatravelbackendver2-0.0.1-SNAPSHOT.jar"]
